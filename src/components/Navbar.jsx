@@ -44,7 +44,7 @@ const Navbar = () => {
             <img
               src="/edastraBrandIcon.webp"
               alt="Edastra Logo"
-              className="h-9 w-9 rounded-xl shadow-lg shadow-primary/30 group-hover:shadow-xl group-hover:shadow-primary/40 group-hover:scale-110 transition-all duration-300"
+              className="h-10 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
             />
             <span className="font-jost tracking-tight group-hover:tracking-normal transition-all duration-300">
               Edastra

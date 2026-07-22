@@ -1,30 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Mail, Phone, MapPin, ArrowUpRight, ExternalLink, Globe, Code2, Share2 } from 'lucide-react'
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  ArrowUpRight,
+  ExternalLink,
+  Globe,
+  Code2,
+  Share2,
+} from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     company: [
-      { label: 'Home', to: '/' },
-      { label: 'Our Mission', to: '/our-mission' },
-      { label: 'About Us', to: '/about-us' },
-      { label: 'Contact', to: '/contact' },
+      { label: "Home", to: "/" },
+      { label: "Our Mission", to: "/our-mission" },
+      { label: "About Us", to: "/about-us" },
+      { label: "Contact", to: "/contact" },
     ],
     services: [
-      { label: 'Education Hub' },
-      { label: 'Edutainment Library' },
-      { label: 'Scholarship Portal' },
-      { label: 'VR Experiences' },
+      { label: "Education Hub" },
+      { label: "Edutainment Library" },
+      { label: "Scholarship Portal" },
+      { label: "VR Experiences" },
     ],
     social: [
-      { icon: ExternalLink, label: 'LinkedIn', href: '#' },
-      { icon: Globe, label: 'Twitter', href: '#' },
-      { icon: Code2, label: 'GitHub', href: '#' },
-      { icon: Share2, label: 'YouTube', href: '#' },
+      { icon: ExternalLink, label: "LinkedIn", href: "#" },
+      { icon: Globe, label: "Twitter", href: "#" },
+      { icon: Code2, label: "GitHub", href: "#" },
+      { icon: Share2, label: "YouTube", href: "#" },
     ],
-  }
+  };
 
   return (
     <footer className="relative bg-primary-dark text-white overflow-hidden">
@@ -44,13 +53,14 @@ const Footer = () => {
               <img
                 src="/edastraBrandIcon.webp"
                 alt="Edastra Logo"
-                className="h-9 w-9 rounded-xl shadow-lg border border-white/20"
+                className="h-10 w-auto object-contain hover:scale-110 transition-transform duration-300"
               />
               <span className="text-2xl font-bold font-jost">Edastra</span>
             </div>
             <p className="text-white/60 leading-relaxed mb-6 text-sm">
-              The ultimate edutainment platform bridging education and entertainment.
-              Empowering students from Pre-school to Class 10 with curriculum-aligned content.
+              The ultimate edutainment platform bridging education and
+              entertainment. Empowering students from Pre-school to Class 10
+              with curriculum-aligned content.
             </p>
             {/* Social Icons */}
             <div className="flex gap-3">
@@ -131,7 +141,7 @@ const Footer = () => {
               <li>
                 <span className="flex items-start gap-3 text-white/60 text-sm">
                   <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                  Mumbai, Maharashtra, India
+                  Remote
                 </span>
               </li>
             </ul>
@@ -154,7 +164,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default React.memo(Footer)
+export default React.memo(Footer);

@@ -285,20 +285,18 @@ const OurMissionPage = () => {
       </section>
 
       {/* ═══ CTA ═══ */}
-      <section className="section-padding bg-white">
-        <div className="section-container">
-          <div className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light rounded-3xl p-12 md:p-16 text-center overflow-hidden">
-            <div
-              className="absolute inset-0 opacity-10"
-              style={{
-                backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
-                backgroundSize: "24px 24px",
-              }}
-            />
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
+      <section className="section-padding bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
+            backgroundSize: "24px 24px",
+          }}
+        />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
 
-            <div className="relative z-10">
-              <Sparkles className="w-10 h-10 text-accent-gold mx-auto mb-6" />
+        <div className="section-container relative z-10 text-center">
+          <Sparkles className="w-10 h-10 text-accent-gold mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold text-white font-jost mb-4">
                 Join Us in Reshaping Education
               </h2>
@@ -321,8 +319,6 @@ const OurMissionPage = () => {
                   About Our Team
                 </Link>
               </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>
