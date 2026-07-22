@@ -6,13 +6,5 @@ export default defineConfig({
   build: {
     target: 'es2020',
     cssCodeSplit: true,
-    minify: 'esbuild',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-        },
-      },
-    },
   },
 })
